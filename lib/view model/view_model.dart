@@ -7,8 +7,6 @@ class ViewModel extends ChangeNotifier {
   GlobalKey<FormState> get signUpformKey => _signUpformKey;
   GlobalKey<FormState> get loginFormKey => _loginFormKey;
 
-  //flutter build apk --split-per-abi
-
   final user = UserModel();
   var _isFormValid = false;
   bool get isFormValid => _isFormValid;
@@ -64,7 +62,7 @@ class ViewModel extends ChangeNotifier {
   String _password = '';
   String _confirmPassword = '';
 
-  // Update the password getters
+  // Updating the password getters
   String get password => _password;
   String get confirmPassword => _confirmPassword;
 
@@ -158,46 +156,6 @@ class ViewModel extends ChangeNotifier {
       return false;
     }
   }
-  // void validateLoginForm() {
-  //   _isLoginFormValid = loginEmailController.text.isNotEmpty &&
-  //       loginPasswordController.text.isNotEmpty;
-  //   notifyListeners();
-  // }
-
-  // bool validateAndLogin(BuildContext context) {
-  //   if (loginEmailController.text == user.email &&
-  //       loginPasswordController.text == _password) {
-  //     ScaffoldMessenger.of(context).showSnackBar(
-  //       SnackBar(
-  //         content: Text(
-  //           'Login successful for ${user.name}!',
-  //           style: TextStyle(
-  //             color: Colors.white,
-  //             fontSize: 16,
-  //             fontWeight: FontWeight.w600,
-  //           ),
-  //         ),
-  //         backgroundColor: Color(0xFF60983C),
-  //       ),
-  //     );
-  //     return true;
-  //   } else {
-  //     ScaffoldMessenger.of(context).showSnackBar(
-  //       SnackBar(
-  //         content: Text(
-  //           'Invalid email or password',
-  //           style: TextStyle(
-  //             color: Colors.white,
-  //             fontSize: 16,
-  //             fontWeight: FontWeight.w600,
-  //           ),
-  //         ),
-  //         backgroundColor: const Color(0xFFFF59A2),
-  //       ),
-  //     );
-  //   }
-  //   return false;
-  // }
 
   void validateSignUpForm() {
     bool isValid = _signUpformKey.currentState?.validate() ?? false;

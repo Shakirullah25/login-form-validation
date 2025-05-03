@@ -9,7 +9,7 @@ Consumer<ViewModel> buildTermsAndConditions() {
       children: [
         StatefulBuilder(
           builder: (BuildContext context, StateSetter setState) {
-            // bool isChecked = false;
+          
             return Transform.scale(
               scale: 0.8,
               child: Checkbox(

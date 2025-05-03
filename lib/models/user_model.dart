@@ -1,3 +1,5 @@
+// Model class 
+
 class UserModel {
   String name;
   String email;

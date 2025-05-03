@@ -113,7 +113,7 @@ class SignUpFormPage extends StatelessWidget {
                   labelText: 'Password',
                   obscureText: viewModel.obscurePassword,
                   validator: (value) {
-                    // if (value!.isEmpty) return 'Enter password';
+                    
                     if (value!.length < 8) {
                       return 'Password must be at least 8 characters';
                     }
@@ -178,7 +178,7 @@ class SignUpFormPage extends StatelessWidget {
                             );
                           }
                         }
-                      : () {}, // Provide an empty function when form is invalid
+                      : () {}, // Providing an empty function when form is invalid
                   sideColor: viewModel.isFormValid
                       ? const Color(0xFF60983C)
                       : const Color(0xFFD0D5DD),
@@ -187,27 +187,7 @@ class SignUpFormPage extends StatelessWidget {
                       : const Color(0xFFD0D5DD),
                   textColor: const Color(0xFFFFFFFF),
                 ),
-                // CustomElevatedButton(
-                //   buttonText: "Sign up",
-                //   onPressed: () {
-                //     viewModel.validateFormAndSubmit(context);
-                //     viewModel.validateForm();
-                //     // Navigator.pushReplacement(
-                //     //   context,
-                //     //   MaterialPageRoute(
-                //     //     builder: (context) => const SignInPage(),
-                //     //   ),
-                //     // );
-                //     //
-                //   },
-                //   sideColor: viewModel.isFormValid
-                //       ? const Color(0xFF60983C)
-                //       : Color(0xFFD0D5DD),
-                //   backgroundColor: viewModel.isFormValid
-                //       ? const Color(0xFF60983C) // Green when valid
-                //       : const Color(0xFFD0D5DD), // Gray when invalid
-                //   textColor: const Color(0xFFFFFFFF),
-                // ),
+                
                 const SizedBox(height: 12),
                 CustomElevatedButton(
                   buttonText: "Sign up with Google",

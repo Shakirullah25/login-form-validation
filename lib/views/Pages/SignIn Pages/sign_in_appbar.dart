@@ -12,7 +12,7 @@ AppBar appBar(BuildContext context, String appbarTitle) {
         size: 20,
       ),
       onPressed: () {
-        // Check if we can pop the current route
+        // Checking if the current route can be popped
         if (Navigator.canPop(context)) {
           Navigator.pop(context);
         } else {

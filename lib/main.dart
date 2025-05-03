@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Login Form Page",
+      title: "Form Validation",
       theme: ThemeData(
         fontFamily: GoogleFonts.raleway().fontFamily,
         useMaterial3: true,

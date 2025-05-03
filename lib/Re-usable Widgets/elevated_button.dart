@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -45,7 +47,7 @@ class CustomElevatedButton extends StatelessWidget {
               icon!,
               const SizedBox(width: 7),
             ],
-            //const SizedBox(width: 5),
+          
             Text(
               buttonText,
               style: TextStyle(
@@ -58,13 +60,7 @@ class CustomElevatedButton extends StatelessWidget {
           ],
         ),
       ),
-      // child: const Text(
-      //   "Login",
-      //   style: TextStyle(
-      //     fontSize: 16,
-      //     fontWeight: FontWeight.w600,
-      //   ),
-      // ),
+      
     );
   }
 }
